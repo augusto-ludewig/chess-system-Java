@@ -1,7 +1,6 @@
 package chess;
 
 import boardgame.Board;
-import boardgame.Position;
 import chess.pieces.King;
 import chess.pieces.Queen;
 import chess.pieces.Roock;
@@ -26,20 +25,25 @@ public class ChessMatch {
 		} return mat;
 	}
 	
-	private void initialSetup() { 	//POSIÇÕES INICIAIS DAS PEÇAS NO TABULEIRO
+	private void placeNewPiece(char column, int row, ChessPiece piece) {
+		board.placeNewPiece(piece, new ChessPosition(column, row).toPosition());
+	}
+	
+	// INSTANCIA E DEFINE AS POSIÇÕES INICIAIS DAS PEÇAS NO TABULEIRO
+	private void initialSetup() {
 		// PEÇAS BRANCAS
-		board.placePiece(new Roock(board, Color.WHITE), new Position(0, 0)); 	//CAVALO
-		board.placePiece(new Roock(board, Color.WHITE), new Position(0, 7));	//CAVALO
-		board.placePiece(new King(board, Color.WHITE), new Position(0, 4));		//REI
-		board.placePiece(new Queen(board, Color.WHITE), new Position(0, 3));	//RAINHA
+		placeNewPiece('a', 8, new Roock(board, Color.WHITE)); 	//TORRE
+		placeNewPiece('h', 8, new Roock(board, Color.WHITE));	//TORRE
+		placeNewPiece('e', 8, new King(board, Color.WHITE));		//REI
+		placeNewPiece('d', 8, new Queen(board, Color.WHITE));	//RAINHA
 		
-		
+		/*
 		// PEÇAS PRETAS
-		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 0));	//CAVALO
-		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 7));	//CAVALO
+		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 0));	//TORRE
+		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 7));	//TORRE
 		board.placePiece(new King(board, Color.BLACK), new Position(7, 4));		//REI
 		board.placePiece(new Queen(board, Color.BLACK), new Position(7, 3));	//RAINHA
-		
+		*/
 	}
 	
 	
