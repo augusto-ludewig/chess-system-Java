@@ -4,17 +4,14 @@ import boardgame.Board;
 import chess.ChessPiece;
 import chess.Color;
 
-public class Roock extends ChessPiece{
+public class Horse extends ChessPiece{
 
-	public Roock(Board board, Color color) {
+	public Horse(Board board, Color color) {
 		super(board, color);
 	}
 	
-	@Override
 	public String toString() {
-		return "◘";
+		return "H";
 	}
-	
-	
 
 }
