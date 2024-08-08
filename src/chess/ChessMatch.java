@@ -30,15 +30,15 @@ public class ChessMatch {
 		// PEÇAS BRANCAS
 		board.placePiece(new Roock(board, Color.WHITE), new Position(0, 0)); 	//CAVALO
 		board.placePiece(new Roock(board, Color.WHITE), new Position(0, 7));	//CAVALO
-		board.placePiece(new King(board, Color.WHITE), new Position(0, 4));
-		board.placePiece(new Queen(board, Color.WHITE), new Position(0, 3));
+		board.placePiece(new King(board, Color.WHITE), new Position(0, 4));		//REI
+		board.placePiece(new Queen(board, Color.WHITE), new Position(0, 3));	//RAINHA
 		
 		
 		// PEÇAS PRETAS
-		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 0));
-		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 7));
-		board.placePiece(new King(board, Color.BLACK), new Position(7, 4));
-		board.placePiece(new Queen(board, Color.BLACK), new Position(7, 3));
+		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 0));	//CAVALO
+		board.placePiece(new Roock(board, Color.BLACK), new Position(7, 7));	//CAVALO
+		board.placePiece(new King(board, Color.BLACK), new Position(7, 4));		//REI
+		board.placePiece(new Queen(board, Color.BLACK), new Position(7, 3));	//RAINHA
 		
 	}
 	
