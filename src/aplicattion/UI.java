@@ -17,6 +17,9 @@ public class UI {
 
 	// CÓDIGOS DE CORES DO CONSOLE
 
+	//Board board = new Board(8,8);
+	public static Board board;
+	
 	public static final String ANSI_RESET = "\u001B[0m";
 	public static final String ANSI_BLACK = "\u001B[30m";
 	public static final String ANSI_RED = "\u001B[31m";
@@ -47,30 +50,6 @@ public class UI {
 			throw new InputMismatchException("Erro ao ler a posição. Valores validos de a1 a h8");
 		}
 
-	}
-	
-	//gambiarra
-	//Board board = new Board(0, 0);
-
-	public ChessPiece performChessMove(ChessPosition sourcePosition, ChessPiece targetPosition) {
-		Position source = sourcePosition.toPosition();
-		Position target = targetPosition.toPosition();
-		validateSourcePosition(source);
-		Piece capturedPiece = makeMove(source, target);
-		return (ChessPiece) capturedPiece;
-	}
-	
-	private Piece makeMove(Position source, Position target) {
-		Piece p = board.removePiece(source);
-		Piece capturedPiece = board.removePiece(target);
-		board.placePiece(p, target);
-		return capturedPiece;
-	}
-	
-	private void validateSourcePosition(Position position) {
-		if (!board.thereIsAPiece(position)) {
-			throw new ChessException("Não há peça nessa posição");
-		}
 	}
 
 	// PRINTA O TABULEIRO
