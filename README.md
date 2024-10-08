@@ -8,24 +8,24 @@
 		  <th colspan="8">Tabuleiro de Xadrez</th>
 		</tr>
 		<tr>
-			<th align="center">♜</th>
-			<th align="center">♞</th>
-			<th align="center">♝</th>
-			<th align="center">♛</th>
-			<th align="center">♚</th>
-			<th align="center">♝</th>
-			<th align="center">♞</th>
-			<th align="center">♜</th>
+			<th align="center">♖</th>
+			<th align="center">♘</th>
+			<th align="center">♗</th>
+			<th align="center">♔</th>
+			<th align="center">♕</th>
+			<th align="center">♗</th>
+			<th align="center">♘</th>
+			<th align="center">♖</th>
 		</tr>
 		<tr>
-			<th align="center">♟</th>
-			<th align="center">♟</th>
-			<th align="center">♟</th>
-			<th align="center">♟</th>
-			<th align="center">♟</th>
-			<th align="center">♟</th>
-			<th align="center">♟</th>
-			<th align="center">♟</th>
+			<th align="center">♙</th>
+			<th align="center">♙</th>
+			<th align="center">♙</th>
+			<th align="center">♙</th>
+			<th align="center">♙</th>
+			<th align="center">♙</th>
+			<th align="center">♙</th>
+			<th align="center">♙</th>
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
